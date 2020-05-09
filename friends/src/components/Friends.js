@@ -42,33 +42,26 @@ import React, {
   
   
   
-    return ( <
-      div >
-      <
-      div >
-      <
-      h1 > Friends < /h1>
+    return ( 
+    <div >
+      <div>
+        <h1> Friends </h1>
   
   
-      <
-      /div> <
-      div >
+      </div> 
+      <div>
   
   
-      <
-      div > < h2 style = {
+      <div> <h2 style = {
         {
           color: `white`
         }
-      } > Add And Remove < /h2></div >
-      <
-      /div> <
-      div >
-      <
-      h1 > Friends List < /h1> <
-      Container >
-      <
-      div style = {
+      } > Add And Remove </h2></div>
+      </div> 
+      <div>
+      <h1> Friends List </h1> 
+      <Container>
+      <div style = {
         {
           display: `flex`,
           flexWrap: `wrap`
@@ -79,53 +72,46 @@ import React, {
         friendlist.map(item => {
           return (
   
-            <
-            FriendDiv key = {
+            <FriendDiv key = {
               item.id
             } >
-            <
-            h1 > ID: {
+            <h1 > ID: {
               item.id
-            } < /h1> <
-            h2 > Name: {
+            } </h1> 
+            <h2> Name: {
               item.name
-            } < /h2> <
-            h2 > Age: {
+            } </h2> 
+            <h2> Age: {
               item.age
-            } < /h2> <
-            h2 > Email: {
+            } </h2> 
+            <h2> Email: {
               item.email
-            } < /h2> <
-            /FriendDiv>
+            } </h2> 
+            </FriendDiv>
           )
         })
-      } <
-      /div> <
-      /Container>
+      } </div> 
+      </Container>
   
-      <
-      div style = {
+      <div style = {
         {
           display: `flex`
         }
       } >
-      <
-      AddFriends friendlist = {
+      <AddFriends friendlist = {
         friendlist
       }
       setUpdate = {
         setUpdate
       }
-      /> <
-      RemoveFriends setUpdate = {
+      /> 
+      <RemoveFriends setUpdate = {
         setUpdate
       }
-      /> <
-      /div> <
-      /div>
+      /> </div> 
+      </div>
   
-      <
-      /div>
+      </div>
     )
   }
   
